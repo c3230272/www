@@ -9,6 +9,31 @@
             position: relative;
             padding-left: 30px;
         }
+        .q1::before {
+            content: " ";
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 3px;
+            width: 23px;
+            height: 23px;
+            border-radius: 50%
+            background: #4682b4;
+        }
+        .q1::after {
+            content: " ";
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 8px;
+            width: 10px;
+            height: 10px;
+            border-top:3px solid #fff;
+            border-right: 3px solid #fff;
+            transform: rotate(45deg);
+        }
         body {
             background-color:#fff;
             color:#666;
