@@ -8,13 +8,46 @@
         h2 {
             background-color: #ebffce;
         }
+
+        .balloon {
+            display: inline-block;
+            font-weight: bold;
+            color: #fff;
+            background: #333;
+            padding: 20px 22px;
+            position: relative;
+        }
+        .balloon::before{
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 12px;
+            background: #333;
+            bottom: -12px;
+            left: 0;
+            right: 0;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+            margin: auto;
+        }
+
+
     </style>
 </head>
 <body>
     <h2>岐阜協立大学　経営学部経営情報学科</h2>
     <div>
         <section>
-            <p></p>
+            <div class = "balloon">
+                <section>
+                    ITに興味のある人
+                </section>
+                <section>
+                    経営を基礎から学びたい人
+                </section>
+                <section>
+                    会計を深く学びたい人
+                </section>
+            </div>
         </section>
     </div>
 </body>
