@@ -12,13 +12,14 @@
 </head>
 <body>
     <h1>座席の予約</h1>
-    <p><div id = "message">東京会場（予約受付中）</div></p>
-    <button onclick = "showAnswer();">予約する</button>
+    <p>東京会場<div id = "message">（予約受付中）</div></p>
+    <div id = "button"><button onclick = "showAnswer();">予約する</button></div>
 
     <script>
         function showAnswer() {
             let anserBox = document.getElementById('message');
-            anserBox.innerHTML = '東京会場（予約済み）';
+            anserBox.innerHTML = '（予約済み）';
+            let 
         }
     </script>
 </body>
