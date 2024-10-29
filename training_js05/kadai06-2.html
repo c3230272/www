@@ -7,6 +7,14 @@
 </head>
 <body>
     <h1>座席の予約</h1>
-    <p>東京会場</p>
+    <p>東京会場</p> <div id = "message">（予約受付中）</div>
+    <button onclick = "showAnswer();">予約する</button>
+
+    <script>
+        function showAnswer() {
+            let anserBox = document.getElementById('message');
+            anserBox.innerHTML = '（予約済み）';
+        }
+    </script>
 </body>
 </html>
