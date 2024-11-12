@@ -13,8 +13,11 @@
     <script>
         let photo = ["photo_1.jpg", "photo_2.jpg", "photo_3.jpg", "photo_4.jpg", 
                      "photo_5.jpg", "photo_6.jpg", "photo_7.jpg", "photo_8.jpg"];
-        ulBox.insertAdjacentHTML('beforeend', photo[0]);
-        button.getElementById('continue').remove();
+        function showPhoto() {
+            ulBox.insertAdjacentHTML('beforeend', photo[0]);
+            button.getElementById('continue').remove();
+        }
+        
     </script>
 </body>
 </html>
