@@ -12,10 +12,11 @@
     
 
     <script>
+        let container = document.getElementById("continue");
         let photo = ["photo_1.jpg", "photo_2.jpg", "photo_3.jpg", "photo_4.jpg", 
                      "photo_5.jpg", "photo_6.jpg", "photo_7.jpg", "photo_8.jpg"];
         function showPhoto() {
-            document.insertAdjacentHTML('beforeend', "<img src = 'photo_1.jpg'>");
+            container.insertAdjacentHTML('beforeend', "<img src = 'photo_1.jpg'>");
             document.getElementById('continue').remove();
         }
         
