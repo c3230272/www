@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>要素の追加と削除</title>
+</head>
+<body>
+    <h3>写真の一覧</h3>
+    <p>以下のボタンをクリックすると、写真が一覧表示されます。</p>
+    <button id = "continue" onclick = "showPhoto()">写真を表示</button>
+
+    <script>
+        let photo = [images/photo_1.jpg, images/photo_2.jpg, images/photo_3.jpg, images/photo_4.jpg, images/photo_5.jpg, images/photo_6.jpg, images/photo_7.jpg, images/photo_8.jpg];
+        for (let i = 0; i < 8; i++) {
+            ulBox.insertAdjacentHTML('beforeend', photo[i]);
+        }
+        
+    
+    </script>
+</body>
+</html>
