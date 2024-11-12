@@ -7,12 +7,12 @@
 </head>
 <body>
     <h3>写真の一覧</h3>
-    <p>以下のボタンをクリックすると、写真が一覧表示されます。</p>
+    <p id = "container">以下のボタンをクリックすると、写真が一覧表示されます。</p>
     <button id = 'continue' onclick = "showPhoto()">写真を表示</button>
     
 
     <script>
-        let container = document.getElementById("continue");
+        let container = document.getElementById("container");
         let photo = ["photo_1.jpg", "photo_2.jpg", "photo_3.jpg", "photo_4.jpg", 
                      "photo_5.jpg", "photo_6.jpg", "photo_7.jpg", "photo_8.jpg"];
         function showPhoto() {
