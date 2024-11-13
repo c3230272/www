@@ -7,28 +7,24 @@
 </head>
 <body>
     <h3>人口の多い国ランキング</h3>
-    <ol>
-        <li id = "chn">中国</li>
-        <li id = "ind">インド</li>
-        <li id = "usa">アメリカ</li>
-        <li id = "idn">インドネシア</li>
+    <ol id = 'flag'>
+        <li>中国</li>
+        <li>インド</li>
+        <li>アメリカ</li>
+        <li>インドネシア</li>
     </ol>
     <button id = 'continue' onclick = "showflag()">国旗で表示</button>
 
     <script>
-        let chnFlag = document.getElementById("chn");
-        let indFlag = document.getElementById("ind");
-        let usaFlag = document.getElementById("usa");
-        let idnFlag = document.getElementById("idn");
+        let container = document.getElementById('flag');
 
-        function showFlag() {
-            chnFlag.insertAdjacentHTML('<img src = flag__CHN.png>');
-            indFlag.insertAdjacentHTML('<img src = flag__IND.png>');
-            usaFlag.insertAdjacentHTML('<img src = flag__USA.png>');
-            idnFlag.insertAdjacentHTML('<img src = flag__IDN.png>');
-
-            document.getElementById('continue').remove();
-        }   
+        let flags = ["flag_CHN.png", "flag_IND.png", "flag_USA.png", "flag_IDN.png"]; 
+        function showflag() {
+            for (let i = 1; i < 5; i++) {
+                container.insertAdjacentHTML('beforeend', `<img src = 'flag_${i}.png'>`);
+                document.getElementById('continue').remove();
+            }
+        }
     </script>
 </body>
 </html>
