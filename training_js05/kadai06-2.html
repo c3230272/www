@@ -8,17 +8,22 @@
         #message {
             color : red;
         }
+        #text {
+            font-weight : bold;
+        }
     </style>
 </head>
 <body>
     <h1>座席の予約</h1>
     <p>東京会場</p><p id = message>（予約受付中）</p>
     <button id = 'button' onclick = "showAnswer();">予約する</button>
-
+    <div id = 'text'></div>
     <script>
         function showAnswer() {
             let anserBox = document.getElementById('message');
-            anserBox.innerHTML = '（予約済み）<br>ありがとうございました。';
+            let anserBox2 = document.getElementById('text');
+            anserBox.innerHTML = '（予約済み）';
+            anserBox2.innerHTML = 'ありがとうございました。'
             document.getElementById('button').remove();
         }
     </script>
