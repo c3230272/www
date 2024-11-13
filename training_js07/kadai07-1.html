@@ -17,14 +17,10 @@
 
     <script>
         let container = document.getElementById('flag');
-
-        let flags = ["flag_CHN.png", "flag_IND.png", "flag_USA.png", "flag_IDN.png"]; 
-        function showflag() {
-            for (let i = 1; i < 5; i++) {
-                container.insertAdjacentHTML('beforeend', `<img src = 'flag_${i}.png'>`);
-                document.getElementById('continue').remove();
-            }
-        }
+        container.insertAdjacentHTML(`<img src = flag_CHN.png>`);
+        container.insertAdjacentHTML(`<img src = flag_IND.png>`);
+        container.insertAdjacentHTML(`<img src = flag_USA.png>`);
+        container.insertAdjacentHTML(`<img src = flag_IDN.png>`);
     </script>
 </body>
 </html>
