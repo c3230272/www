@@ -7,12 +7,12 @@
 </head>
 <body>
     <h3>人口の多い国ランキング</h3>
-    <ul>
+    <ol>
         <li id = "chn">中国</li>
         <li id = "ind">インド</li>
         <li id = "usa">アメリカ</li>
         <li id = "idn">インドネシア</li>
-    </ul>
+    </ol>
     <button id = 'continue' onclick = "showflag()">国旗で表示</button>
 
     <script>
@@ -20,7 +20,7 @@
         let indFlag = document.getElementById("ind");
         let usaFlag = document.getElementById("usa");
         let idnFlag = document.getElementById("idn");
-        
+
         function showFlag() {
             chnFlag.insertAdjacentHTML('<img src = flag__CHN.png>');
             indFlag.insertAdjacentHTML('<img src = flag__IND.png>');
