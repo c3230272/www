@@ -16,11 +16,13 @@
     <button id = 'continue' onclick = "showflag()">国旗で表示</button>
 
     <script>
-        let container = document.getElementById('flag');
-        container.insertAdjacentHTML(`<img src = flag_CHN.png>`);
-        container.insertAdjacentHTML(`<img src = flag_IND.png>`);
-        container.insertAdjacentHTML(`<img src = flag_USA.png>`);
-        container.insertAdjacentHTML(`<img src = flag_IDN.png>`);
+        function showflag() {
+            let container = document.getElementById('flag');
+            container.insertAdjacentHTML(`<img src = flag_CHN.png>`);
+            container.insertAdjacentHTML(`<img src = flag_IND.png>`);
+            container.insertAdjacentHTML(`<img src = flag_USA.png>`);
+            container.insertAdjacentHTML(`<img src = flag_IDN.png>`);
+        }
     </script>
 </body>
 </html>
