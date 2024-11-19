@@ -13,13 +13,17 @@
 
     <script>
         function show() {
-            let clickTimes = 0;
+            let clickTimes = 1;
             let container = document.getElementById("message");
 
-            if (clickTimes == 1) {
-                container.insertAdjacentHTML('東北地方にあります。');
-                document.getElementById("btn").reload("答えを見る");
-                clickTimes++;
+            for (let i = 1; i <= 2; i++) {
+                if (clickTimes == 1) {
+                    container.insertAdjacentHTML('東北地方にあります。');
+                    document.getElementById("btn").reload("答えを見る");
+                    clickTimes++;
+                } else {
+                    container.insertAdjacentHTML('答えは「岩手県」です。');
+                }
             }
         }
     </script>
