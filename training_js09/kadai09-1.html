@@ -14,14 +14,14 @@
     <script>
         function show() {
             let clickTimes = 1;
-
+            var element = document.getElementById("message");
             for (let i = 1; i <= 2; i++) {
                 if (clickTimes == 1) {
-                    document.insertAdjacentHTML("message").innerText = '東北地方にあります。';
-                    document.insertAdjacentHTML("btn").relord = "答えを見る";
+                    element.innerHTML = '東北地方にあります。';
+                    document.insertAdjacentHTML("btn").innerText = "答えを見る";
                     clickTimes++;
                 } else {
-                    document.insertAdjacentHTML("message").innerText = '答えは「岩手県」です。';
+                    element.innerText = '答えは「岩手県」です。';
                 }
             }
         }
