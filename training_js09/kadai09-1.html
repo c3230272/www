@@ -17,11 +17,11 @@
 
             for (let i = 1; i <= 2; i++) {
                 if (clickTimes == 1) {
-                    document.getElementById("message").textContent = '東北地方にあります。';
+                    document.insertAdjacentHTML("message").textContent = '東北地方にあります。';
                     document.insertAdjacentHTML("btn").relord = "答えを見る";
                     clickTimes++;
                 } else {
-                    document.getElementById("message").textContent = '答えは「岩手県」です。';
+                    document.insertAdjacentHTML("message").textContent = '答えは「岩手県」です。';
                 }
             }
         }
