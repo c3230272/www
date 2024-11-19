@@ -12,9 +12,10 @@
     <div id = "message">（注意）北海道は「県」ではありません。</div>
 
     <script>
-        let clickTimes = 0;
-        let container = document.getElementByID("message");
         function show() {
+            let clickTimes = 0;
+            let container = document.getElementById("message");
+
             if (clickTimes == 1) {
                 container.insertAdjacentHTML('東北地方にあります。');
                 document.getElementById("btn").reload("答えを見る");
