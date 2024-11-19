@@ -15,15 +15,17 @@
         function show() {
             let clickTimes = 1;
             var element = document.getElementById("message");
+
             for (let i = 1; i <= 2; i++) {
                 if (clickTimes == 1) {
-                    element.innerHTML = '東北地方にあります。';
-                    document.insertAdjacentHTML("btn").innerText = "答えを見る";
-                    clickTimes++;
-                } else {
-                    element.innerText = '答えは「岩手県」です。';
+                element.innerHTML = '東北地方にあります。';
+                document.insertAdjacentHTML("btn").innerText = "答えを見る";
+                clickTimes++;
+            } else {
+                element.innerText = '答えは「岩手県」です。';
                 }
             }
+                
         }
     </script>
 </body>
