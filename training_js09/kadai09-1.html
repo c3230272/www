@@ -13,16 +13,12 @@
 
     <script>
         let clickTimes = 0;
+        let container = document.getElementByID("message");
         function show() {
-            clickTimes++;
-            switch (clickTimes) {
-                case 1 :
-                    document.getElementById("btn").textContent('答えを見る');
-                    let hintBox = document.getElementById("message").textContent('東北地方にあります。');
-                    break;
-                default :
-                    let anserBox = document.getElementById("message").textContent('答えは「岩手県」です。');
-                    break;
+            if (clickTimes == 1) {
+                container.insertAdjacentHTML('東北地方にあります。');
+                document.getElementById("btn").reload("答えを見る");
+                clickTimes++;
             }
         }
     </script>
