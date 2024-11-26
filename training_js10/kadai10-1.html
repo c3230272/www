@@ -27,31 +27,14 @@
 
     <script>
         function check(x) {
-            let anser = x;
-            switch (anser) {
-                case 1 : 
-                document.getElementById('message').textContent = '間違い！';
-                break;
-
-                case 2 : 
-                document.getElementById('message').textContent = '正解！';
-                break;
-
-                case 3 : 
-                document.getElementById('message').textContent = '間違い！';
-                break;
-
-                case 4 : 
-                document.getElementById('message').textContent = '正解！';
-                break;
-
-                case 5 : 
-                document.getElementById('message').textContent = '間違い！';
-                break;
-            }  
+            if (x == 2 || x == 4) {
+                document.genElementById('message').textContent = '正解！';
+            } else {
+                document.genElementById('message').textContent = '間違い！';
+            }
         }
 
     </script>
-    
+
 </body>
 </html>
