@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エラー処理</title>
+</head>
+<body>
+    <h1>素数を求める</h1>
+    <p>指定した範囲内にある素数をJavaScriptで求めます。</p>
+    <button onclick = "show()">範囲を指定</button>
+    <div id = 'message'>ここに結果が表示されます。</div>
+
+    <script>
+        function show() {
+            let text = '';
+            let min = parseInt (prompt('範囲内の最小値を入力してください'));
+            let max = parseInt (prompt('範囲内の最大値を入力してください'));
+
+            if (min < 2 || max < 2 || min % 1 != 0 || min > max) {
+                alert ('2以上の半角の整数で範囲を正しく指定してください。');
+            }
+        }
+    </script>
+</body>
+</html>
