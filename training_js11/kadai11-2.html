@@ -22,13 +22,16 @@
 <div id="message" class="big_font"></div>
 
 <script>
-    function show() {
-        let anser = [];
+    function show(x) {
+        let anser = [0, 1, 2];
         let count = 0;
+        let i = 0;
 
         while (count < 3) {
-            
-
+            if (i == 2 || i == 14 || i == 37) {
+                anser[count] = i;
+                count++;
+            }
         }
         document.getElementById("message").textContent = anser[x] + "、" + anser[x] + "、" + anser[x] + "が解です。";
     }
