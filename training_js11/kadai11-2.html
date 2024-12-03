@@ -28,10 +28,11 @@
         let i = 0;
 
         while (count < 3) {
-                anser[0] = 1;
-                anser[1] = 2;
-                anser[2] = 3;
-                count = 3;
+                i++;
+                if (i == 2 || i == 14 || i == 37) {
+                    anser[count] = i;
+                    count++;
+                }
             }
             document.getElementById("message").textContent = anser[0] + "、" + anser[1] + "、" + anser[2] + "が解です。";
         }
