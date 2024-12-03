@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>エラー処理</title>
+    <style>
+        #message {
+            width : 500px;
+            padding : 15px;
+            margin : 25px 0px;
+            background-color : #FFCC99;
+        }
+    </style>
 </head>
 <body>
     <h1>素数を求める</h1>
@@ -19,7 +27,30 @@
 
             if (min < 2 || max < 2 || min % 1 != 0 || min > max) {
                 alert ('2以上の半角の整数で範囲を正しく指定してください。');
+                return;
             }
+
+            for (let i = min; i <= max; i++) {
+                let flag = check(i);
+                if (flag) {
+                    text = text + i + "、";
+                }
+            }
+
+            if (text != "") {
+                document.getElementById("message").textContent = text;
+            } else {
+                document.getElementById("message").textContent = "素数はありません。";
+            }
+        }
+
+        function check(num) {
+            for (let j = 2; j <= num-1; j++) {
+                if (num % j == 0) {
+                    return false;
+                }
+            }
+            return true;
         }
     </script>
 </body>
