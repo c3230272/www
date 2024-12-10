@@ -15,9 +15,9 @@
     <script>
         function show(x) {
 
-           let num1;
-           let num2;
-           let anser;
+           let num1 = 0;
+           let num2 = 0;
+           let anser = 0;
 
            for (let i = 1; i <= 3000; i++) {
             if (i % 2 == 0 &&
@@ -37,8 +37,9 @@
 
             if (num1 == num2) {
                 anser = num1;
-                document.getElementById("message").textContent = "答えは" + anser + "です。";
             }
+
+            document.getElementById("message").textContent = "答えは" + anser + "です。";
 
         }
 
