@@ -9,7 +9,37 @@
     <h1>1~10で割り切れる数字</h1>
     <p>1、2、3、4、5、6、7、8、9、10で <br>
      割り切れる最小の数値をJavaScriptで求めます。</p>
-    <button id = "btn">結果を見る</button>
+    <button onclick="show()">結果を見る</button>
     <div id = "message">ここに結果が表示されます。</div>
+
+    <script>
+        function show(x) {
+
+           let num1;
+           let num2;
+           let anser;
+           
+           for (let i = 1; i <= 3000; i++) {
+            if (i % 2 == 0 &&
+                i % 4 == 0 &&
+                i % 6 == 0 &&
+                i % 8 == 0 &&
+                i % 10 == 0) {
+                    num1 = i;
+                } else if (i % 1 == 0 &&
+                           i % 3 == 0 &&
+                           i % 5 == 0 &&
+                           i % 7 == 0 &&
+                           i % 9 == 0) {
+                    num2 = i;
+                }
+            if (num1 == num2) {
+                anser = num1;
+            }
+           }
+        }
+        document.getElementById("message").textContent = "答えは" + anser + "です。";
+
+    </script>
 </body>
 </html>
