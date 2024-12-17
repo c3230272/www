@@ -22,22 +22,26 @@
 
     <script>
         function check() {
+            let num = new array[x];
             let anser = 0;
-            let num1 = prompt ("範囲の最小値を1~10で入力してください", " ");
+            let num1 = prompt ("範囲の最小値を1~10で入力してください", "");
+            let num2 = 0;
+
             if (num1 > 0 && num1 < 11) {
-                let num2 = prompt ("範囲の最大値を1~10で入力してください", " ");
+                num2 = prompt ("範囲の最大値を1~10で入力してください", "");
             }
 
             for (let i = num1; i <= num2; i++) {
                 for (let j = 1; j <= 100; j++) {
                     if (j % i == 0) {
-                        anser = j;
+                        num[x] = j;
                     }
                 }
             }
 
-            document.getElementById("message").textContent = num1 + "～" + num2 + "で割り切れる最小の数値は" + anser + "です。";
             
+            document.getElementById("message").textContent = num1 + "～" + num2 + "で割り切れる最小の数値は" + anser + "です。";
+
         }
     </script>
 </body>
