@@ -26,7 +26,7 @@
     <p>ボックス内の表示されている部分のHTMLを表示します。</p>
 
     <div id = "box1">
-    <h3>人口800万人以上の都道府県</h3>
+    <h3 id = "title">人口800万人以上の都道府県</h3>
     <ul>
         <li>東京都</li>
         <li>神奈川県</li>
@@ -42,7 +42,7 @@
 
     <script>
         function check() {
-            let message = document.getElementById("box1");
+            let message = document.getElementById("title");
             document.getElementById("text").textContent = message;
         }
     </script>
