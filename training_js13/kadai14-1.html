@@ -9,7 +9,7 @@
     <h1>HTMLの表示</h1>
     <p>ボックス内の表示されている部分のHTMLを表示します。</p>
 
-    <div id = "">
+    <div id = "message1">
     <h3>人口800万人以上の都道府県</h3>
     <ul>
         <li>東京都</li>
@@ -20,8 +20,15 @@
 
     <button onclick = "check();">HTMLを表示</button>
 
-    <div id = "">
-    <p>ここにHTMLが表示されます。</p>
+    <div id = "message2">
+    <p id = "text">ここにHTMLが表示されます。</p>
     </div>
+
+    <script>
+        function check() {
+            document.getElementById("text").textContent = 
+            "<h3>人口800万人以上の都道府県</h3> <ul> <li>東京都</li> <li>神奈川県</li> <li>大阪府</li> </ul>";
+        }
+    </script>
 </body>
 </html>
