@@ -42,9 +42,8 @@
 
     <script>
         function check() {
-            let message = document.getElementById("box1").textContent;
+            let message = document.getElementById("box1").outerHTML;
             console.log(document.getElementById("box1").innerHTML);
-            console.log(document.getElementById("box1").textContent);
             document.getElementById("text") = message;
         }
     </script>
