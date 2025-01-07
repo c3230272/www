@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>プロパティ</title>
     <style>
-        #box1 {
+        #box {
             border : solid ;
             padding-top : 10px;
             padding-bottom : 10px;
             padding-left : 6px;
         }
-        #box2 {
+        #text {
             border : solid;
             padding-left : 6px;
         }
@@ -25,8 +25,8 @@
     <h1>HTMLの表示</h1>
     <p>ボックス内の表示されている部分のHTMLを表示します。</p>
 
-    <div id = "box1">
-    <h3 id = "title">人口800万人以上の都道府県</h3>
+    <div id = "box">
+    <h3>人口800万人以上の都道府県</h3>
     <ul>
         <li>東京都</li>
         <li>神奈川県</li>
@@ -35,14 +35,12 @@
     </div>
 
     <button onclick = "check();">HTMLを表示</button>
-
-    <div id = "box2">
+    
     <p id = "text">ここにHTMLが表示されます。</p>
-    </div>
 
     <script>
         function check() {
-            let message = document.getElementById("title");
+            let message = document.getElementByTagName(div);
             document.getElementById("text").textContent = message;
         }
     </script>
