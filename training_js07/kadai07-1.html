@@ -21,16 +21,16 @@
 
     <script>
         let photo = ["flag_CHN.png", "flag_IND.png", "flag_USA.png", "flag_IDN.png"];
-        
+
         function showflag() {
 
             document.getElementById('flag').remove();
 
             let container = document.getElementById('photo');
-            container.insertAdjacentHTML('beforeend' + '<li>' + photo[0] + '</li>');
-            container.insertAdjacentHTML('beforeend' + '<li>' + photo[1] + '</li>');
-            container.insertAdjacentHTML('beforeend' + '<li>' + photo[2] + '</li>');
-            container.insertAdjacentHTML('beforeend' + '<li>' + photo[3] + '</li>');
+            container.insertAdjacentHTML('beforeend' + '<li>' + `<img src = 'flag_CHN.png'>`+ '</li>');
+            container.insertAdjacentHTML('beforeend' + '<li>' + `<img src = 'flag_IND.png'>` + '</li>');
+            container.insertAdjacentHTML('beforeend' + '<li>' + `<img src = 'flag_USA.png'>` + '</li>');
+            container.insertAdjacentHTML('beforeend' + '<li>' + `<img src = 'flag_IDN.png'>` + '</li>');
             
         }
     </script>
