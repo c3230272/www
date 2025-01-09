@@ -13,14 +13,20 @@
         <li>アメリカ</li>
         <li>インドネシア</li>
     </ol>
+    <div>
+        <ol id = 'photo'>
+        </ol>
+    </div>
     <button id = 'continue' onclick = "showflag()">国旗で表示</button>
 
     <script>
         let photo = ["flag_CHN.png", "flag_IND.png", "flag_USA.png", "flag_IDN.png"];
+        
         function showflag() {
 
-            let container = document.getElementById('flag');
-            
+            document.getElementById('flag').remove();
+
+            let container = document.getElementById('photo');
             container.insertAdjacentHTML('beforeend' + '<li>' + photo[0] + '</li>');
             container.insertAdjacentHTML('beforeend' + '<li>' + photo[1] + '</li>');
             container.insertAdjacentHTML('beforeend' + '<li>' + photo[2] + '</li>');
