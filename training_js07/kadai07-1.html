@@ -18,13 +18,13 @@
     <script>
         let photo = ["flag_CHN.png", "flag_IND.png", "flag_USA.png", "flag_IDN.png"];
         function showflag() {
-            let container = document.getElementById('flag');
+            document.getElementById('flag').remove();
+
+            /*let container = document.getElementById('flag');
             container.insertAdjacentHTML(`<img src = 'flag_CHN.png'>`);
             container.insertAdjacentHTML(`<img src = 'flag_IND.png'>`);
             container.insertAdjacentHTML(`<img src = 'flag_USA.png'>`);
-            container.insertAdjacentHTML(`<img src = 'flag_IDN.png'>`);
-
-            document.getElementById('flag').remove();
+            container.insertAdjacentHTML(`<img src = 'flag_IDN.png'>`);*/
 
         }
     </script>
