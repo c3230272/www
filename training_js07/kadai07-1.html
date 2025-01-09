@@ -8,10 +8,10 @@
 <body>
     <h3>人口の多い国ランキング</h3>
     <ol id = 'flag'>
-        <li id = 'photo_1'>中国</li>
-        <li id = 'photo_2'>インド</li>
-        <li id = 'photo_3'>アメリカ</li>
-        <li id = 'photo_4'>インドネシア</li>
+        <li>中国</li>
+        <li>インド</li>
+        <li>アメリカ</li>
+        <li>インドネシア</li>
     </ol>
     <button id = 'continue' onclick = "showflag()">国旗で表示</button>
 
@@ -21,12 +21,11 @@
 
             let container = document.getElementById('flag');
             
-            document.getElementById('photo_1').container.insertAdjacentHTML(`<img src = 'flag_CHN.png'>`);
-            document.getElementById('photo_2').container.insertAdjacentHTML(`<img src = 'flag_IND.png'>`);
-            document.getElementById('photo_3').container.insertAdjacentHTML(`<img src = 'flag_USA.png'>`);
-            document.getElementById('photo_4').container.insertAdjacentHTML(`<img src = 'flag_IDN.png'>`);
-
-            document.getElementById('flag').remove();
+            container.insertAdjacentHTML('beforeend' + '<li>' + photo[0] + '</li>');
+            container.insertAdjacentHTML('beforeend' + '<li>' + photo[1] + '</li>');
+            container.insertAdjacentHTML('beforeend' + '<li>' + photo[2] + '</li>');
+            container.insertAdjacentHTML('beforeend' + '<li>' + photo[3] + '</li>');
+            
         }
     </script>
 </body>
